@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<script>
+  function showTab(tabId) {
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.style.display = 'none';
+    });
+
+    // Show the selected tab
+    document.getElementById(tabId).style.display = 'block';
+  }
+</script>
+
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">M.V SRINIVASULU</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                            Home</a>
+                    </li>
+                   
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                            About </a>
+                    </li>
+                    
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact"> Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">M.V SRINIVASULU</h1>
+                <h4 class="sub-heading">
+                    AGRICULTURE DRONE PILOT
+                </h4>
+            </div>
+            
+            <div class="intro-buttons">
+              <button class="btn common-btn">Hire Me</button>
+                
+                <a class="btn ghost-btn" href="srinu resume.pdf" download target="blank">Get Resume</a>
+            </div>
+              
+                    <div class="image">
+                            <img src="SRINU PIC.jpeg" alt="Web Design Image">
+                        </div>
+            
+          
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    
+        <!-- About Section -->
+<section id="about" class="about">
+  <div class="about-text">
+    <h1 class="my-heading">About Me</h1>
+    <p class="lead-para">
+      Hi, I'm M.V. SRINIVASULU, a Skilled and certified Agriculture Drone Pilot with hands-on experience in precision farming technologies.<br> 
+        Proficient in operating UAVs (Unmanned Aerial Vehicles) for crop monitoring, pesticide spraying, mapping, and yield analysis.<br> 
+        Strong background in safety compliance, equipment maintenance, and providing data-driven insights to optimize agricultural productivity..
+    </p>
+
+    <!-- Buttons to toggle skills and education -->
+    <div class="tab-buttons">
+      <button onclick="showTab('skills')" class="tab-btn">Skills</button>
+      <button onclick="showTab('education')" class="tab-btn">Education</button>
+    </div>
+
+    <!-- Toggle content -->
+    <div id="skills" class="tab-content">
+      <h3>My Skills</h3>
+      <ul>
+          <li> Drone Pilot </li>
+        <li> Problem-solving in field operations, UAV piloting </li>
+        <li> Crop health monitoring & stress detection </li>
+        <li> Teamwork in agricultural projects </li>
+      </ul>
+    </div>
+
+    <div id="education" class="tab-content">
+      <h3>Education</h3>
+      <ul>
+        <li>Bsc-Electronics - Jawahar Bharathi Degree College (2020-2025)</li>
+        <li>Intermediate - Gitanjali Junior College (2018-2020)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="about-image">
+    <img src="SRINU PIC.jpeg" alt="About Image">
+  </div>
+</section>
+
+    </section>
+   
+                       
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" placeholder="Your Name">
+                    <input class="form-controls" type="text" placeholder="Your Email">
+                    <input class="form-controls" type="text" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                        rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">sssrinu064@gmail.com</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+91 63047 25899</p>
+                </div>
+                
+                <div class="details">
+                    <h5 class="contact-heading">ADDRESS</h5>
+                    <p class="contact-text">chandaluru</p>
+                    <p>prakasam</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+               2025 SRINIVASULU. Made by me
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href=" https://srinivasulu-mv.github.io/srinu-s-portfolio/">
+
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/marabathuni-venkata -srinivasulu-2642562a7">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.instagram.com/srinu_srinivas_123s?igsh=YzR2YXplbzYxd3Ft">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                        
+
+
+
+
+
+
+
 
